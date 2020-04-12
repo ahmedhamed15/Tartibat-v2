@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/rtl";
+@import "components/general-classes";
+@import "components/buttons";
+@import "components/animations";
+@import "components/scroll-top-button";
+@import "layouts/navbar";
+@import "sections/header";
+@import "sections/clients";
+@import "sections/methodology";
+@import "sections/arrange";
+@import "sections/solutions";
+@import "sections/portfolio";
+@import "sections/arrangement";
+@import "sections/contact-us";
+@import "sections/arrange-for-you";
+@import "sections/our-arrangement";
+@import "sections/arrangement-landing";
+@import "layouts/footer";
+
+
+/* =====[Start: Global rules]===== */
+body {
+    overflow-x: hidden !important;
+    background-color: $darkColor;
+    min-height: 100vh;
+    position: relative;
+}
+*, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Tajawal', sans-serif;
+}
+a {
+    text-decoration: none !important;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+h2.section-heading {
+    font-size: 68px;
+    color: $whiteColor;
+    position: relative;
+    margin-bottom: 45px !important;
+    @media (max-width: 768px) {
+        font-size: 31px;
+        width: max-content;
+        margin: auto;
+    }
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -35px;
+        width: 80px;
+        height: 65px;
+        z-index: -1;
+        background-size: contain !important;
+        @media (max-width: 768px) {
+            top: -3px;
+            right: -36px;
+            width: 58px;
+            height: 45px;
+        }
+    }
+}
+/* =====[End: Global rules]===== */

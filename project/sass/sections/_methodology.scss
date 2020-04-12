@@ -1,0 +1,54 @@
+.methodology {
+    padding: 75px 0;
+    .stages {
+        width: max-content;
+        margin: auto;
+        position: relative;
+        @media (max-width: 768px) {
+            width: 100%
+        }
+        &:before,
+        &:after {
+            display: block;
+            position: absolute;
+            font-size: 38px;
+            color: $whiteColor;
+            @media (max-width: 768px) {
+                font-size: 28px;
+            }
+        }
+        &:before {
+            content: "نبدأ معك من نقطة";
+            top: -10px;
+            right: 0;
+            width: 180px
+        }
+        &:after {
+            content: "ونخطو معك خطوة بخطوة";
+            top: 50%;
+            left: -80px;
+            width: 220px;
+            transform: translateY(-50%);
+            @media (max-width: 768px) {
+                left: 0;
+            }
+        }
+        img {
+            width: 400px;
+            height: auto;
+            @media (max-width: 768px) {
+                width: 100%
+            }
+        }
+    }
+    span.last-stage {
+        color: $whiteColor;
+        font-size: 38px;
+        display: block;
+        margin-top: 120px;
+        @media (max-width: 768px) {
+            font-size: 28px;
+            margin-top: 45px;
+        }
+    }
+}

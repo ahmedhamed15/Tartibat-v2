@@ -1,0 +1,108 @@
+.arrangement-landing {
+    padding: 130px 0 0;
+    min-height: 82vh;
+    @media (max-width: 768px) {
+        min-height: auto;
+        padding-top: 75px;
+    }
+    h2.section-heading {
+        &:before {
+            background: url('../images/arrange-icon.svg') no-repeat center center;
+        }
+    }
+    .shuffle-tartibat {
+        .mix {
+            display: none;
+        }
+        .shffule-actions {
+            direction: rtl;
+            text-align: center;
+            margin-bottom: 80px;
+            span.filter {
+                width: 145px;
+                border-radius: 15px;
+                border: 2px solid $blueBorderColor;
+                color: $whiteColor;
+                display: inline-block;
+                font-size: 14px;
+                text-align: center;
+                margin-bottom: 15px;
+                margin-left: 10px;
+                cursor: pointer;
+                @extend .transition-effect;
+                &:last-child {
+                    margin-left: 0;
+                }
+                &:first-child,
+                &:nth-child(5) {
+                    border-color: $blueBorderColor;
+                    &:hover, &.active {
+                        background-color: $blueBorderColor;
+                    }
+                }
+                &:nth-child(2),
+                &:nth-child(6) {
+                    border-color: $yellowBorderColor;
+                    &:hover, &.active {
+                        background-color: $yellowBorderColor;
+                    }
+                }
+                &:nth-child(3),
+                &:last-child {
+                    border-color: $perpelBorderColor;
+                    &:hover, &.active {
+                        background-color: $perpelBorderColor;
+                    }
+                }
+                &:nth-child(4) {
+                    border-color: $redColor;
+                    &:hover, &.active {
+                        background-color: $redColor;
+                    }
+                }
+            }
+        }
+        .sub-project {
+            margin-bottom: 150px;
+            @media (max-width: 768px) {
+                margin-bottom: 80px;
+            }
+            .project-img {
+                height: 300px;
+                img {
+                    max-width: 300px;
+                    max-height: 300px;
+                }
+            }
+            .project-info {
+                margin-top: 40px;
+                padding: 0 35px;
+                h5 {    
+                    font-size: 16px;
+                    color: $whiteColor;
+                    margin-bottom: 22px;
+                }
+                a.btn {
+                    border: 2px solid $whiteColor;
+                    color: $whiteColor;
+                    border-radius: 15px;
+                    background: none;
+                    font-size: 14px;
+                    padding: 3px 16px;
+                    @extend .transition-effect;
+                    &:hover {
+                        background-color: $whiteColor;
+                        color: $blueColor;
+                    }
+                }
+                .project-logo {
+
+                }
+            }
+        }
+    }
+    + footer.footer {
+        margin-bottom: 0;
+        position: static;
+    }
+}

@@ -1,0 +1,83 @@
+.arrange-for-you{
+    padding: 130px 0 75px;
+    min-height: 82vh;
+    @media (max-width: 768px) {
+        min-height: auto;
+        padding-top: 75px;
+    }
+    h2.section-heading {
+        &:before {
+            background: url('../images/arrange-for-you-icon.svg') no-repeat center center;
+        }
+    }
+    .arrange-form {
+        color: $whiteColor;
+        .col-6.col-lg-3 {
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+        }
+        .form-group {
+            margin-bottom: 2rem;
+            input, textarea {
+                background: none;
+                border: 2px solid $borderColor;
+                border-radius: 20px;
+                direction: rtl;
+                color: $whiteColor;
+            }
+            textarea {
+                min-height: 140px;
+                &.yellow-border {
+                    border-color: $yellowBorderColor;
+                }
+            }
+            input[type="submit"] {
+                width: 200px;
+                margin-top: 40px;
+                border-color: $yellowBorderColor;
+                background-color: $yellowBorderColor;
+            }
+            label[for^="selected"] {
+                width: 150px;
+                text-align: center;
+                border-radius: 20px;
+                margin-top: 14px;
+                height: 30px;
+                line-height: 30px;
+                border: 2px solid transparent;
+                cursor: pointer;
+                &.blue-border {
+                    border-color: $blueBorderColor;
+                }
+                &.yellow-border {
+                    border-color: $yellowBorderColor;
+                }
+                &.red-border {
+                    border-color: $redColor;
+                }
+                &.perpel-border {
+                    border-color: $perpelBorderColor;
+                }
+            }
+        }
+    }
+    .contact-us-img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            background: url("../images/arrange-for-you-img.svg") no-repeat center center;
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    + footer.footer {
+        margin-bottom: 0;
+        position: static;
+    }
+}

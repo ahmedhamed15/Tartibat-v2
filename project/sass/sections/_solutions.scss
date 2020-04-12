@@ -1,0 +1,217 @@
+.solutions {
+    padding: 75px 0;
+    h2.section-heading {
+        &:before {
+            background: url('../images/solution-icon.svg') no-repeat center center;
+        }
+    }
+    .solution-slider {
+        position: relative;
+        .slick-slide {
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+        .slick-arrow {
+            position: absolute;
+            bottom: -110px;
+            border: 1px solid #453D66;
+            background: none;
+            color: $whiteColor;
+            border-radius: 7px;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            @extend .transition-effect;
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+            &:hover {
+                background-color: $redColor;
+                border-color: $redColor;
+            }
+            &:before {
+                content: "";
+                display: block;
+                background-size: contain !important;
+                margin: auto;
+                line-height: 50px;
+                width: 10px;
+                height: 20px
+            }
+            &.slick-prev {
+                left: 45%;
+                @media (max-width: 768px) {
+                    left: 30%;
+                }
+                &:before {
+                    background: url('../images/chevrone-left.svg') no-repeat center center;
+                }
+            }
+            &.slick-next {
+                right: 45%;
+                @media (max-width: 768px) {
+                    right: 30%;
+                }
+                &:before {
+                    background: url('../images/chevrone-right.svg') no-repeat center center;
+                }
+            }
+        }
+        .solution-info {
+            color: $whiteColor;
+            border: 1px solid;
+            border-radius: 15px;
+            @extend .transition-effect;
+            &:hover {
+                transform: translateY(-20px);
+                @media (max-width: 768px) {
+                    transform: translateY(0);
+                }
+            }
+            >h5 {
+                font-size: 38px;
+                margin-bottom: 15px;
+                padding: 30px 30px 0;
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                    margin-bottom: 0px;
+                }
+            }
+            >ul {
+                margin-right: 20px;
+                padding: 30px 30px 0;
+                @media (max-width: 768px) {
+                    padding-top: 20px
+                }
+                li {
+                    position: relative;
+                    margin-bottom: 15px; 
+                    @media (max-width: 768px) {
+                        margin-bottom: 7px;
+                    }
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 9px;
+                        right: -19px;
+                        width: 7px;
+                        height: 7px;
+                        background-color: $whiteColor;
+                        border-radius: 50%;
+                    }
+                    a {
+                        color: $whiteColor;
+                        @media (max-width: 768px) {
+                            font-size: 13px
+                        }
+                        &:focus {
+                            outline: 0;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+            >.sol-img {
+                height: 280px;
+                width: 100%;
+                background-size: contain !important;
+                @media (max-width: 768px) {
+                    height: 175px;
+                }
+            }
+            &.organization {
+                border-color: $orgnizationColor;
+                &:hover {
+                    background-color: $orgnizationColor;
+                    >.sol-img {
+                        background: url("../images/sol-orgnization-hover.svg") no-repeat left bottom;
+                    }
+                }
+                >.sol-img {
+                    background: url("../images/sol-orgnization.svg") no-repeat left bottom;
+                }
+            }
+            &.attendance {
+                border-color: $attandanceColor;
+                &:hover {
+                    background-color: $attandanceColor;
+                    >.sol-img {
+                        background: url("../images/sol-attend-hover.svg") no-repeat left bottom;
+                    }
+                }
+                >.sol-img {
+                    background: url("../images/sol-attend.svg") no-repeat left bottom;
+                }
+            }
+            &.enter {
+                border-color: $enterColor;
+                &:hover {
+                    background-color: $enterColor;
+                    >.sol-img {
+                        background: url("../images/sol-enter-hover.svg") no-repeat left bottom;
+                    }
+                }
+                >.sol-img {
+                    background: url("../images/sol-enter.svg") no-repeat left bottom;
+                }
+            }
+            &.excution {
+                border-color: $excutionColor;
+                &:hover {
+                    background-color: $excutionColor;
+                    >.sol-img {
+                        background: url("../images/sol-excution-hover.svg") no-repeat left bottom;
+                    }
+                }
+                >.sol-img {
+                    background: url("../images/sol-excution.svg") no-repeat left bottom;
+                }
+            }
+            &.designs {
+                border-color: $designsColor;
+                &:hover {
+                    background-color: $designsColor;
+                    >.sol-img {
+                        background: url("../images/sol-designs-hover.svg") no-repeat left bottom;
+                    }
+                }
+                >.sol-img {
+                    background: url("../images/sol-designs.svg") no-repeat left bottom;
+                }
+            }
+            &.entertainment {
+                border-color: $entertainmentColor;
+                &:hover {
+                    background-color: $entertainmentColor;
+                    >.sol-img {
+                        background: url("../images/sol-entertainment-hover.svg") no-repeat left bottom;
+                    }
+                }
+                >.sol-img {
+                    background: url("../images/sol-entertainment.svg") no-repeat left bottom;
+                }
+            }
+            &.events {
+                border-color: $eventsColor;
+                &:hover {
+                    background-color: $eventsColor;
+                    >.sol-img {
+                        background: url("../images/sol-events-hover.svg") no-repeat left bottom;
+                    }
+                }
+                >.sol-img {
+                    background: url("../images/sol-events.svg") no-repeat left bottom;
+                }
+            }
+        }
+        .slick-list {
+            overflow: initial !important;
+            @media (max-width: 768px) {
+                overflow: hidden !important;
+            }
+        }
+    }
+}

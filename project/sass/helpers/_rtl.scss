@@ -1,0 +1,9 @@
+// RTL : Global
+.row {
+    flex-direction: row-reverse;
+}
+
+// RTL : Navbar
+.navbar.navbar-expand-lg {
+    direction: rtl;
+}

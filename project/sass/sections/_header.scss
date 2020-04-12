@@ -1,0 +1,100 @@
+header {
+    &.header {
+        height: 100vh;
+        position: relative;
+        @media (max-width: 768px) {
+            overflow: hidden;
+        }
+        >span.shape-absolute {
+            display: block;
+            width: 300px;
+            height: 250px;
+            background-size: contain !important;
+            position: absolute;
+            z-index: -1;
+            @media (max-width: 768px) {
+                width: 250px;
+                height: 200px;
+            }
+            &:first-child {
+                top: calc(50% - 125px);
+                left: -80px;
+                background: url('../images/arrow.svg') no-repeat center center;
+                @media (max-width: 768px) {
+                    top: calc(50% - 205px);
+                }
+            }
+            &:nth-child(2) {
+                top: calc(50% - 125px);
+                right: -12px;
+                background: url('../images/shape-one.svg') no-repeat center center;
+                @media (max-width: 768px) {
+                    top: calc(50% - -120px);
+                    left: -101px;
+                    right: auto;
+                }
+            }
+            &:nth-child(3) {
+                bottom: -49px;
+                left: 13.5%;
+                background: url('../images/shape-two.svg') no-repeat center center;
+                @media (max-width: 768px) {
+                    bottom: calc(50% - 222px);
+                    right: -100px;
+                    left: auto;
+                }
+            }
+        }
+        .main-heading {
+            color: $whiteColor;
+            padding-top: 8rem;
+            font-size: 3.5rem;
+            margin-bottom: 50px;
+            @media (max-width: 768px) {
+                font-size: 43px;
+                text-align: right !important;
+                line-height: 65px;
+            }
+        }
+        .header-media {
+            position: relative;
+            video {
+                width: 900px;
+                height: auto;
+                object-fit: cover;
+                border-radius: 45px;
+                &:focus {
+                    outline: 0;
+                }
+                @media (max-width: 768px) {
+                    width: 100%;
+                    border-radius: 15px;
+                }
+            }
+            .video-play-icon {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                cursor: pointer;
+                &:before {
+                    content: "";
+                    background: url('../images/video-icon.svg') no-repeat center center;
+                    width: 100px;
+                    height: 100px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-size: contain;
+                    @media (max-width: 768px) {
+                        width: 55px;
+                        height: 55px;
+                        transform: translate(-50%, -55%);
+                    }
+                }   
+            }
+        }
+    }
+}

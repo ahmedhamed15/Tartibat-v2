@@ -1,0 +1,309 @@
+.our-arrangement {
+    padding: 130px 0 75px;
+    min-height: 82vh;
+    @media (max-width: 768px) {
+        min-height: auto;
+        padding-top: 75px;
+    }
+    h2.section-heading {
+        &:before {
+            background: url('../images/arrange-icon.svg') no-repeat center center;
+        }
+    }
+    .project-name {
+        color: $borderColor;
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    .project-desc {
+        font-size: 14PX;
+        color: $whiteColor;
+        line-height: 31px;
+    }
+    .arrangment-slider {
+        .arrangment-slide {
+            img {
+                width: 100%
+            }
+        }
+    }
+    + footer.footer {
+        margin-bottom: 0;
+        position: static;
+    }
+}
+
+
+@mixin breakpoint($point) {
+    @if $point==xxs {
+        @media (max-width: 480px) {
+            @content;
+        }
+    }
+    @else if $point==xs {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+    @else if $point==sm {
+        @media (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    }
+    @else if $point==md {
+        @media (min-width: 768px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+    @else if $point==md-d {
+        @media (min-width: 1200px) and (max-width: 1299px) {
+            @content;
+        }
+    } //md-d is of Medium Desktop
+    @else if $point==lg {
+        @media (max-width: 1440px) {
+            @content;
+        }
+    }
+    @else {
+        @warn "Breakpoint mixin supports: xxs, xs, sm, md, lg";
+    }
+}
+
+#wrap {
+    padding: 30px 0;
+}
+
+.review-title {
+    margin-bottom: 30px;
+}
+
+.review-card {
+    &--option-1 {
+        border: 1px solid #D8D8D8;
+        padding: 25px;
+    }
+    &--option-2 {
+        padding: 0 15px;
+    }
+    &--option-3 {
+        padding: 0 200px;
+    }
+    &--option-4 {
+        height: 100%;
+        .slide-img-f-arrangement {
+            height: 100%
+        }
+    }
+    .review-card-img {
+        border: 1px solid #eee;
+        width: 100px;
+        height: 70px;
+        background-image: url('https://unsplash.it/200');
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 0 auto 15px;
+    }
+    .review-author {
+        .ra-author {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .ra-rating-star {
+            margin: 0 0 15px;
+            padding: 0;
+            list-style-type: none;
+            li {
+                display: inline-block;
+                margin: 0 -2px;
+            }
+        }
+    }
+    .review-content {}
+}
+
+.carousel-wrap {
+    width: 635px;
+    height: 323px;
+    margin: 0 auto !important;
+    position: relative;
+    @include breakpoint(sm) {
+        width: 400px;
+    }
+    @include breakpoint(xs) {
+        width: 350px;
+        height: 345px
+    }
+    @include breakpoint(xxs) {
+        width: 240px;
+        height: 408px;
+    }
+}
+
+.carousel {}
+
+.carousel>li {
+    width: 380px;
+    height: 254px;
+    display: inline-block;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; // overflow: hidden;
+    @include breakpoint(sm) {
+        width: 400px;
+    }
+    @include breakpoint(xs) {
+        width: 350px;
+        height: 345px;
+    }
+    @include breakpoint(xxs) {
+        width: 240px;
+        height: 408px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
+
+.items {
+    position: absolute;
+}
+
+.main-pos {
+    margin-left: 2em !important;
+    z-index: 3000;
+    @include breakpoint(sm) {
+        margin-left: -40px !important;
+    }
+    @include breakpoint(xs) {
+        margin-left: 0px !important;
+    }
+}
+
+.left-pos {
+    opacity: .5;
+    margin-left: -10em !important;
+    z-index: 1000;
+    -webkit-transform: scale(.75);
+    -moz-transform: scale(.75);
+    transform: scale(.75);
+    @include breakpoint(sm) {
+        margin-left: -220px !important;
+    }
+    @include breakpoint(xs) {
+        margin-left: -113px !important;
+    }
+    @include breakpoint(xxs) {
+        margin-left: -90px !important;
+    }
+}
+
+.back-pos {
+    opacity: .05;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    transform: scale(.5);
+}
+
+.right-pos {
+    opacity: .5;
+    margin-left: 14em !important;
+    z-index: 1000;
+    -webkit-transform: scale(.75);
+    -moz-transform: scale(.75);
+    transform: scale(.75);
+    @include breakpoint(sm) {
+        margin-left: 140px !important;
+    }
+    @include breakpoint(xs) {
+        margin-left: 30px !important;
+    }
+    @include breakpoint(xxs) {
+        margin-left: 90px !important;
+    }
+}
+
+.slider {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    a {
+        color: #999;
+    }
+    i {
+        font-size: 45px;
+    }
+    #prev,
+    #next {
+        position: absolute;
+        z-index: 9;
+        bottom: -200px;
+        border: none;
+        width: 55px;
+        height: 55px;
+        border-radius: 10px;
+        border: 1px solid #453D66;
+        @extend .transition-effect;
+        &:hover {
+            background-color: #453D66;
+        }
+        @media (max-width: 768px) {
+            width: 40px;
+            height: 40px;
+            border-radius: 15px;
+            bottom: -275px;
+        }
+        &:before {
+            content: "";
+            display: block;
+            background-size: contain !important;
+            margin: auto;
+            margin-top: 16px;
+            width: 10px;
+            height: 20px;
+            @media (max-width: 768px) {
+                margin-top: 10px;
+            }
+        }
+    }
+    #prev {
+        left: 75px;
+        &:before {
+            background: url('../images/chevrone-left.svg') no-repeat center center;
+        }
+        @include breakpoint(md) {
+            left: -180px;
+        }
+        @include breakpoint(xs) {
+            left: -70px;
+        }
+        @media (max-width: 768px) {
+            left: 0;
+        }
+    }
+    #next {
+        left: 307px;
+        &:before {
+            background: url('../images/chevrone-right.svg') no-repeat center center;
+        }
+        @include breakpoint(md) {
+            right: -180px;
+        }
+        @include breakpoint(xs) {
+            right: -70px;
+        }
+        @media (max-width: 768px) {
+            right: 0;
+            left: auto;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.arrangement {
+    padding: 130px 0 75px;
+    min-height: 82vh;
+    @media (max-width: 768px) {
+        min-height: auto;
+        padding-top: 75px;
+    }
+    h2.section-heading {
+        &:before {
+            background: url('../images/arrange-icon2.svg') no-repeat center center;
+        }
+    }
+    .about-tartibat {
+        position: relative;
+        margin-bottom: 130px;
+        p {
+            font-size: 22px;
+            width: 85%;
+            margin-left: auto;
+            color: $whiteColor;
+            line-height: 45px;
+            @media (max-width: 768px) {
+                font-size: 15px;
+                width: 100%;
+                line-height: 35px;
+                text-align: center;
+            }
+        }
+        &:after,
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            background-size: contain !important;
+        }
+        &:after {
+            bottom: -150px;
+            left: 0;
+            background: url('../images/arrangement-circle.svg') no-repeat center center;
+            width: 140px;
+            height: 140px;
+            @media (max-width: 768px) {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &:before {
+            bottom: -87px;
+            left: 50%;
+            transform: translateX(-45%);
+            background: url('../images/arrangement-line.svg') no-repeat center center;
+            width: 600px;
+            height: 14px;
+            @media (max-width: 768px) {
+                width: 200px;
+                height: 10px;
+                bottom: -105px;
+                transform: translateX(-30%);
+            }
+        }
+    }
+    + footer.footer {
+        margin-bottom: 0;
+        position: static;
+    }
+}

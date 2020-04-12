@@ -1,0 +1,22 @@
+<svg id="service_6_fill" data-name="service 6 / fill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="380" height="246" viewBox="0 0 380 246">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Mask_Copy_4" data-name="Mask Copy 4" width="380" height="246" rx="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_2" data-name="Group 2">
+    <rect id="Mask_Copy_4-2" data-name="Mask Copy 4" width="380" height="246" rx="24" fill="none"/>
+    <g id="Group_2-2" data-name="Group 2" clip-path="url(#clip-path)">
+      <g id="Group_13" data-name="Group 13" transform="translate(-51 7)">
+        <path id="Clip_2" data-name="Clip 2" d="M0,0H316V272H0Z" transform="translate(4 5.6)" fill="none"/>
+        <path id="Path" d="M2.173,12.355A7.2,7.2,0,1,1,7.2,14.4a7.169,7.169,0,0,1-5.023-2.045" transform="translate(210.4 56)" fill="#fff"/>
+        <path id="Path-2" data-name="Path" d="M2.177,12.354A7.2,7.2,0,1,1,7.2,14.4a7.153,7.153,0,0,1-5.023-2.046" transform="translate(226.4 72)" fill="#fff"/>
+        <path id="Path-3" data-name="Path" d="M2.173,12.355A7.2,7.2,0,1,1,7.2,14.4a7.17,7.17,0,0,1-5.027-2.045" transform="translate(243.2 87.2)" fill="#fff"/>
+        <path id="Path-4" data-name="Path" d="M0,7.2a7.2,7.2,0,1,1,7.2,7.2A7.2,7.2,0,0,1,0,7.2" transform="translate(120 195.2)" fill="#fff"/>
+        <path id="Path-5" data-name="Path" d="M0,7.2a7.2,7.2,0,1,1,7.2,7.2A7.2,7.2,0,0,1,0,7.2" transform="translate(120 216.8)" fill="#fff"/>
+        <path id="Fill_4" data-name="Fill 4" d="M72.891,176.8H7.021A7.017,7.017,0,0,1,0,169.787V144a7.021,7.021,0,0,1,14.042,0v18.779H65.87V30.594A7.022,7.022,0,0,1,77.79,25.57l68.1,66.262L183.71,55.039l-44.3-43a7.017,7.017,0,1,1,9.785-10.059L198.671,50a7.007,7.007,0,0,1,.007,10.053l-47.886,46.59a7.027,7.027,0,0,1-9.8,0L79.912,47.216V169.787a7.017,7.017,0,0,1-7.021,7.013" transform="translate(120 100.8)" fill="#030028"/>
+        <path id="Fill_6" data-name="Fill 6" d="M54.551,209.6a6.941,6.941,0,0,1-4.867-1.986l-47.575-46.5a7.017,7.017,0,0,1,0-10.028L154.641,1.986a6.957,6.957,0,0,1,9.717-.017L207.474,43.82a6.988,6.988,0,0,1-9.7,10.062l-38.25-37.127L16.973,156.1l37.578,36.73,67.661-66.137a6.973,6.973,0,0,1,11.843,5.014v49.678a6.976,6.976,0,1,1-13.951,0V148.3L59.418,207.614a6.941,6.941,0,0,1-4.867,1.986" fill="#030028"/>
+      </g>
+    </g>
+  </g>
+</svg>

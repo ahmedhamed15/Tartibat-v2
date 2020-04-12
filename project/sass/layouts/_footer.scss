@@ -1,0 +1,98 @@
+.footer {
+    background-color: $blueColor;
+    padding: 20px 0;
+    margin-bottom: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    @media (max-width: 768px) {
+        padding: 35px 70px;
+        margin-bottom: 0;
+        position: static;
+    }
+    h5 {
+     font: {
+         size: 14px;
+         weight: normal
+     }       
+     color: $whiteColor;
+     margin-bottom: 20px;
+    }
+    .row.main-row {
+        align-items: center;
+    }
+    .social-media-icons {
+        >ul {
+            display: flex;
+            flex-direction: row-reverse;
+            @media (max-width: 768px) {
+                justify-content: center;
+                margin-bottom: 30px;
+            }
+            li {
+                display: inline-block;
+                &:not(:last-child) {
+                    margin-left: 17px;
+                }
+                a {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    background-color: $whiteColor;
+                    color: $darkColor;
+                    border-radius: 50%;
+                    line-height: 32px;
+                    @extend .transition-effect;
+                    &:hover {
+                        background-color: $darkColor;
+                        color: $whiteColor;
+                    }
+                }
+            }
+        }
+    }
+    .footer-logo {
+        img {
+            max-width: 150px;
+        }
+    }
+    .contact-us-info {
+        div.row {
+            >div {
+                ul {
+                    li {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        color: $whiteColor;
+                        &:not(:last-child) {
+                            margin-bottom: 15px;
+                        }
+                        @media (max-width: 768px) {
+                            margin-bottom: 15px;
+                        }
+                        svg, i {
+                            color: $skyColor;
+                            margin-left: 15px;
+                        }
+                        a {
+                            color: $whiteColor;
+                            font-size: 13px;
+                            font-weight: 500;
+                            line-height: 23px;
+                        }
+                    }
+                }
+                &:last-child {
+                    ul {
+                        li {
+                            @media (max-width: 768px) {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

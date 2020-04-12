@@ -1,0 +1,108 @@
+.portfolio {
+    padding: 130px 0 320px;
+    @media (max-width: 768px) {
+        padding-bottom: 75px;
+    }
+    h2.section-heading {
+        &:before {
+            background: url('../images/portfolio-icon.svg') no-repeat center center;
+        }
+    }
+    .portfolio-slider {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        position: relative;
+        .portfolio-slider-body {
+            img, video {
+                width: 100%;
+                // height: 475px;
+                border-radius: 20px;
+            }
+            video {
+                object-fit: cover;
+            }
+        }
+        button.slick-arrow {
+            position: absolute;
+            z-index: 9;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.3);
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            cursor: pointer;
+            @media (max-width: 768px) {
+                width: 40px;
+                height: 40px;
+                border-radius: 15px;
+            }
+            @extend .transition-effect;
+            &:hover {
+                background: rgba(255, 255, 255, 0.5);
+            }
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+            &.slick-prev {
+                left: 25px;
+                @media (max-width: 768px) {
+                    left: 15px;
+                }
+                &:before {
+                    background: url('../images/chevrone-left.svg') no-repeat center center;
+                }
+            }
+            &.slick-next {
+                right: 25px;
+                @media (max-width: 768px) {
+                    right: 15px;
+                }
+                &:before {
+                    background: url('../images/chevrone-right.svg') no-repeat center center;
+                }
+            }
+            &:before {
+                content: "";
+                display: block;
+                background-size: contain !important;
+                margin: auto;
+                line-height: 50px;
+                width: 10px;
+                height: 20px
+            }
+        }
+    }
+    .download-portfolio {
+        >a {
+            font-size: 24px;
+            color: $whiteColor;
+            @extend .my-bordered-btn;
+            width: 255px;
+            margin: auto;
+            display: inherit;
+            margin-top: 70px;
+            border-color: $redColor;
+            @media (max-width: 768px) {
+                font-size: 14px;
+                margin-top: 50px;
+                width: 200px;
+            }
+            >span {          
+                width: 30px;
+                height: 18px;
+                background: url(../images/download-icon.svg) no-repeat center center;
+                background-size: contain;
+                display: inline-block;
+                margin-right: 5px;
+                @media (max-width: 768px) {
+                    width: 25px;
+                    height: 13px;
+                }
+            }
+        }
+    }
+}
