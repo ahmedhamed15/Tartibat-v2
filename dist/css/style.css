@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 .row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -17,7 +16,8 @@
 .my-bordered-btn, .navbar.navbar-expand-lg .navigation-actions > ul li:first-child a, .arrange .more-arrangement a, .portfolio .download-portfolio > a,
 .my-filled-btn,
 .navbar.navbar-expand-lg .navigation-actions > ul li:last-child a {
-  font-size: 16px; }
+  font-size: 16px;
+  border-radius: 60px !important; }
   .my-bordered-btn:focus, .navbar.navbar-expand-lg .navigation-actions > ul li:first-child a:focus, .arrange .more-arrangement a:focus, .portfolio .download-portfolio > a:focus,
   .my-filled-btn:focus,
   .navbar.navbar-expand-lg .navigation-actions > ul li:last-child a:focus {
@@ -167,9 +167,10 @@ header.header {
     margin-bottom: 50px; }
     @media (max-width: 768px) {
       header.header .main-heading {
-        font-size: 43px;
-        text-align: right !important;
-        line-height: 65px; } }
+        font-size: 45px;
+        line-height: 65px;
+        padding-top: 5.5rem;
+        margin-bottom: 85px; } }
   header.header .header-media {
     position: relative; }
     header.header .header-media video {
@@ -228,7 +229,8 @@ header.header {
     margin-bottom: 65px; }
     @media (max-width: 768px) {
       .clients .client {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px;
+        padding: 15px; } }
     .clients .client a img {
       width: 140px;
       height: auto; }
@@ -305,7 +307,7 @@ header.header {
         padding-left: 30px;
         padding-right: 0; } }
   .arrange .row .info-organize {
-    background-color: #482AC6;
+    background-color: rgba(72, 42, 198, 0.38);
     border-radius: 200px 0 0 200px;
     padding: 45px 13rem 45px 80px;
     text-align: right; }
@@ -1182,14 +1184,41 @@ header.header {
       margin-bottom: 0; } }
 
 /* =====[Start: Global rules]===== */
+@font-face {
+  font-family: "FFShamelFamily-BoldSans";
+  src: url(../fonts/FFShamelFamily-BoldSans.otf); }
+
+@font-face {
+  font-family: "FFShamelFamily-BoldSans";
+  src: url(../fonts/FFShamelFamily-BoldSans.ttf); }
+
+@font-face {
+  font-family: "FFShamelFamily-NormalSans";
+  src: url(../fonts/FFShamelFamily-NormalSans.otf); }
+
+@font-face {
+  font-family: "FFShamelFamily-NormalSans";
+  src: url(../fonts/FFShamelFamily-NormalSans.ttf); }
+
+@font-face {
+  font-family: "FFShamelFamily-MediumSans";
+  src: url(../fonts/FFShamelFamily-MediumSans.otf); }
+
+@font-face {
+  font-family: "FFShamelFamily-MediumSans";
+  src: url(../fonts/FFShamelFamily-MediumSans.ttf); }
+
 body {
   overflow-x: hidden !important;
   background-color: #05002A;
   min-height: 100vh;
   position: relative; }
 
-*, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Tajawal', sans-serif; }
+* {
+  font-family: "FFShamelFamily-NormalSans"; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "FFShamelFamily-MediumSans" !important; }
 
 a {
   text-decoration: none !important; }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 @import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/rtl";
@@ -22,14 +22,42 @@
 
 
 /* =====[Start: Global rules]===== */
+@font-face {
+    font-family: "FFShamelFamily-BoldSans";
+    src: url(../fonts/FFShamelFamily-BoldSans.otf);
+}
+@font-face {
+    font-family: "FFShamelFamily-BoldSans";
+    src: url(../fonts/FFShamelFamily-BoldSans.ttf);
+}
+@font-face {
+    font-family: "FFShamelFamily-NormalSans";
+    src: url(../fonts/FFShamelFamily-NormalSans.otf);
+}
+@font-face {
+    font-family: "FFShamelFamily-NormalSans";
+    src: url(../fonts/FFShamelFamily-NormalSans.ttf);
+}
+@font-face {
+    font-family: "FFShamelFamily-MediumSans";
+    src: url(../fonts/FFShamelFamily-MediumSans.otf);
+}
+@font-face {
+    font-family: "FFShamelFamily-MediumSans";
+    src: url(../fonts/FFShamelFamily-MediumSans.ttf);
+}
 body {
     overflow-x: hidden !important;
     background-color: $darkColor;
     min-height: 100vh;
     position: relative;
 }
-*, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Tajawal', sans-serif;
+* {
+    font-family: "FFShamelFamily-NormalSans";
+}
+h1, h2, h3, h4, h5, h6 {
+    //font-family: 'Tajawal', sans-serif;
+    font-family: "FFShamelFamily-MediumSans" !important;
 }
 a {
     text-decoration: none !important;

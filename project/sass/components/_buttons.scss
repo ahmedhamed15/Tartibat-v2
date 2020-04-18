@@ -1,6 +1,7 @@
 .my-bordered-btn ,
 .my-filled-btn {
     font-size: 16px;
+    border-radius: 60px !important;
     &:focus {
         outline: 0;
         box-shadow: none;
